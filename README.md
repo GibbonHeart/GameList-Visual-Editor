@@ -4,7 +4,10 @@ Fixes Onion OS box art covering your game list text on Miyoo handhelds - live pr
 
 If you've used Done Set 3 or any other Miyoo Mix-style art pack, you've probably run into this: the artwork sits at a fixed size on top of the screen, and depending on your theme and font size, it can eat into the title text above or below it. There's no setting buried in Onion to fix this — it's baked into how the (closed source) MainUI renders things. This tool works around it from the asset side instead: shrink the art, fade it, and/or shrink the list font, until it stops covering what you actually want to read.
 
-<img width="718" height="994" alt="Screenshot 2026-06-29 201304" src="https://github.com/user-attachments/assets/244ce68d-8625-4c40-a0e4-7d02ef71f175" />
+<img width="426" height="320" alt="image" src="https://github.com/user-attachments/assets/31afe1e9-eade-41b9-92ab-d286409097bc" />
+
+
+<img width="425" height="319" alt="image" src="https://github.com/user-attachments/assets/36e0644b-3da2-4a47-bea5-a856c3e1379a" />
 
 
 ## Features
