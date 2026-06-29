@@ -2,10 +2,6 @@
 # GameList-Visual-Editor
 Fixes Onion OS box art covering your game list text on Miyoo handhelds - live preview, batch image processing, font size editor. Mini / Mini Plus / Flip / Mini Flip.
 
-# GameList Visual Editor
-
-A small tool for Onion OS users (Miyoo Mini / Mini Plus / Flip / Mini Flip) who are sick of their scraped box art covering up the game list text.
-
 If you've used Done Set 3 or any other Miyoo Mix-style art pack, you've probably run into this: the artwork sits at a fixed size on top of the screen, and depending on your theme and font size, it can eat into the title text above or below it. There's no setting buried in Onion to fix this — it's baked into how the (closed source) MainUI renders things. This tool works around it from the asset side instead: shrink the art, fade it, and/or shrink the list font, until it stops covering what you actually want to read.
 
 ![preview](screenshot-preview.png)
