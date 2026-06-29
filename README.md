@@ -56,21 +56,23 @@ That's it - same tool, same result, just running from code you can open and read
 
 1. Pick your device from the dropdown - this changes the screen size used for the preview.
 2. Play with the height/opacity/font sliders until the mockup looks right. There's a built-in sample image, or click "Use my own image" to check against one of your real ones.
-3. Point "Source folder" at your `Roms` folder.
-4. Pick an output folder, then hit run.
+3. For testing, pick a "Source folder" and point it at a game image of your choice 
+4. Create a test output folder, then hit run.
 5. If you also want the font size changed, point the bottom section at your theme's `config.json` and save.
 
 ### About source/output folders - read this part
 
 You can point both Source and Output at the **same `Roms` folder**, and it'll process every system in place in one go - this is the fastest way to do your whole library at once.
 
-The catch: doing it this way has **no backup**. The font-size tool makes a `.bak` copy automatically before changing anything; the image batch processor does not. If you're not 100% sure on your settings yet, either:
+Doing it this way has **no backup**. The font-size tool makes a `.bak` copy automatically before changing anything; the image batch processor does not. If you're not 100% sure on your settings yet, either:
 - point Output at a separate empty folder first and check the results, or
-- just copy your whole `Roms` folder somewhere safe before running it in place
+- you may genuinely want to back up all your images in their own respective folders
 
-Once you're confident in your settings, Roms-to-Roms is the quickest way to redo everything at once.
+Once you're confident in your settings, Roms-to-Roms is the quickest way to redo everything at once, i.e. source folder select roms and output folder select roms too
 
-## Honest caveats
+<img width="530" height="154" alt="image" src="https://github.com/user-attachments/assets/4d30b162-8610-42ea-99d6-32c5f17f13d7" />
+
+## Sidenotes
 
 - The live preview is a best-effort mockup. The numbers behind it (screen size, header/footer height, max artwork size) are measured directly from Onion's own official theme files, and the centering behavior was corrected against photos of an actual device - but MainUI itself is a closed-source binary, so there's a limit to how precisely this can ever be confirmed from the outside. Treat it as "very close," not "pixel-perfect guaranteed" on every possible theme.
 - The Mini Flip's screen resolution is real and confirmed, but its header/footer bar heights are a proportional estimate, not measured from real assets like the other three devices.
