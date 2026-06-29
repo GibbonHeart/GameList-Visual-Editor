@@ -2,7 +2,7 @@
 # GameList-Visual-Editor
 Fixes Onion OS box art covering your game list text on Miyoo handhelds - live preview, batch image processing, font size editor. Mini / Mini Plus / Flip / Mini Flip.
 
-If you've used Done Set 3 or any other Miyoo Mix-style art pack, you've probably run into this: the artwork sits at a fixed size on top of the screen, and depending on your theme and font size, it can eat into the title text above or below it. There's no setting buried in Onion to fix this — it's baked into how the (closed source) MainUI renders things. This tool works around it from the asset side instead: shrink the art, fade it, and/or shrink the list font, until it stops covering what you actually want to read.
+If you've used Done Set 3 or any other Miyoo Mix-style art pack, you've probably run into this: the artwork sits at a fixed size on top of the screen, and depending on your theme and font size, it can eat into the title text above or below it. There's no setting buried in Onion to fix this - it's baked into how the (closed source) MainUI renders things. This tool works around it from the asset side instead: shrink the art, fade it, and/or shrink the list font, until it stops covering what you actually want to read.
 
 <img width="426" height="320" alt="image" src="https://github.com/user-attachments/assets/31afe1e9-eade-41b9-92ab-d286409097bc" />
 
@@ -12,19 +12,20 @@ If you've used Done Set 3 or any other Miyoo Mix-style art pack, you've probably
 
 ## Features
 
-- Live preview that updates instantly as you adjust height, opacity, or font size — built from real measurements taken off Onion's own theme files (screen size, header/footer bar height, max artwork size, list row height), not guesswork
+- Live preview that updates instantly as you adjust height, opacity, or font size - built from real measurements taken off Onion's own theme files (screen size, header/footer bar height, max artwork size, list row height), not guesswork
 - Device dropdown for Mini / Mini Plus / Flip / Mini Flip, since they don't all share the same screen resolution
 - Preview against the built-in sample image, or load one of your own real PNGs to check against
 - Batch-processes your actual `Imgs` folders: point it at your whole `Roms` folder and it finds and handles every system underneath automatically, no need to do it one folder at a time
 - Game list font size editor for your theme's `config.json`, with automatic backup before any change and a one-click restore if you change your mind
-- Warns you (once per session) that adjusting font size only previews — you still need to hit "Save" to apply it
 - Remembers your last-used folders and settings between runs
-- Checks your source folder actually has something to process before claiming success
 - Saves a text summary of every batch run automatically
+
+<img width="718" height="994" alt="Screenshot 2026-06-29 201304" src="https://github.com/user-attachments/assets/950abd3d-dfb8-4ae3-9f89-255c8f99c62b" />
+
 
 ## Getting it running
 
-There are two ways to do this — pick whichever you're comfortable with.
+There are two ways to do this - pick whichever you're comfortable with.
 
 ### Option A: Just use the .exe (Windows, no Python needed)
 
