@@ -30,39 +30,39 @@ There are two ways to do this - pick whichever you're comfortable with.
 
 ### Option A: Just use the .exe (Windows, no Python needed)
 
-Grab it from the **Releases** page on the right side of this repo, not from the source files themselves — it's not committed into the repo directly, just attached to releases.
+Grab it from the **Releases** page on the right side of this repo, not from the source files themselves - it's not committed into the repo directly, just attached to releases.
 
-One thing worth knowing: PyInstaller-built `.exe` files (which is how this one's made) quite often get **falsely flagged by Windows Defender or other antivirus** as suspicious. This is a known, common false positive with that build tool specifically, not a sign anything's actually wrong. If you'd rather not take that on faith, see Option B below — running from source means nothing's hidden from you.
+One thing worth knowing: PyInstaller-built `.exe` files (which is how this one's made) quite often get **falsely flagged by Windows Defender or other antivirus** as suspicious. This is a known, common false positive with that build tool specifically, not a sign anything's actually wrong. If you'd rather not take that on faith, see Option B below - running from source means nothing's hidden from you.
 
 ### Option B: Run it from source yourself
 
 This works on Windows, Mac, or Linux, and means you're running the exact code in this repo, nothing compiled or hidden.
 
-1. Install Python if you don't have it already (python.org — on Windows, tick "Add Python to PATH" during install)
+1. Install Python if you don't have it already (python.org - on Windows, tick "Add Python to PATH" during install)
 2. Install one extra package:
    ```
    pip install pillow
    ```
-   Tkinter (the GUI part) comes bundled with Python already — nothing else to install.
+   Tkinter (the GUI part) comes bundled with Python already - nothing else to install.
 3. Download `gamelist_visual_editor.py` from this repo
 4. Run it:
    ```
    python gamelist_visual_editor.py
    ```
 
-That's it — same tool, same result, just running from code you can open and read yourself first if you want.
+That's it - same tool, same result, just running from code you can open and read yourself first if you want.
 
 ## Using it
 
-1. Pick your device from the dropdown — this changes the screen size used for the preview.
+1. Pick your device from the dropdown - this changes the screen size used for the preview.
 2. Play with the height/opacity/font sliders until the mockup looks right. There's a built-in sample image, or click "Use my own image" to check against one of your real ones.
 3. Point "Source folder" at your `Roms` folder.
 4. Pick an output folder, then hit run.
 5. If you also want the font size changed, point the bottom section at your theme's `config.json` and save.
 
-### About source/output folders — read this part
+### About source/output folders - read this part
 
-You can point both Source and Output at the **same `Roms` folder**, and it'll process every system in place in one go — this is the fastest way to do your whole library at once.
+You can point both Source and Output at the **same `Roms` folder**, and it'll process every system in place in one go - this is the fastest way to do your whole library at once.
 
 The catch: doing it this way has **no backup**. The font-size tool makes a `.bak` copy automatically before changing anything; the image batch processor does not. If you're not 100% sure on your settings yet, either:
 - point Output at a separate empty folder first and check the results, or
@@ -72,13 +72,13 @@ Once you're confident in your settings, Roms-to-Roms is the quickest way to redo
 
 ## Honest caveats
 
-- The live preview is a best-effort mockup. The numbers behind it (screen size, header/footer height, max artwork size) are measured directly from Onion's own official theme files, and the centering behavior was corrected against photos of an actual device — but MainUI itself is a closed-source binary, so there's a limit to how precisely this can ever be confirmed from the outside. Treat it as "very close," not "pixel-perfect guaranteed" on every possible theme.
+- The live preview is a best-effort mockup. The numbers behind it (screen size, header/footer height, max artwork size) are measured directly from Onion's own official theme files, and the centering behavior was corrected against photos of an actual device - but MainUI itself is a closed-source binary, so there's a limit to how precisely this can ever be confirmed from the outside. Treat it as "very close," not "pixel-perfect guaranteed" on every possible theme.
 - The Mini Flip's screen resolution is real and confirmed, but its header/footer bar heights are a proportional estimate, not measured from real assets like the other three devices.
 
 ## Building the .exe (for maintainers/contributors)
 
-The `.exe` attached to Releases isn't built automatically — to produce a new one, run `build_exe.bat` on a Windows machine with Python installed. It uses PyInstaller to bundle everything into `dist/GameList Visual Editor.exe`, which then gets uploaded as a Release asset.
+The `.exe` attached to Releases isn't built automatically - to produce a new one, run `build_exe.bat` on a Windows machine with Python installed. It uses PyInstaller to bundle everything into `dist/GameList Visual Editor.exe`, which then gets uploaded as a Release asset.
 
 ## License
 
-Unlicense — public domain, do whatever you want with it.
+Unlicense - public domain, do whatever you want with it.
