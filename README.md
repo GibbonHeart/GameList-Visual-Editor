@@ -30,7 +30,7 @@ There are two ways to do this - pick whichever you're comfortable with.
 
 ### Option A: Just use the .exe (Windows, no Python needed)
 
-Download: Latest release (.exe)
+Download: Latest release https://github.com/GibbonHeart/GameList-Visual-Editor/releases/tag/v1.0.0 
 
 Grab it from the **Releases** page on the right side of this repo, not from the source files themselves - it's not committed into the repo directly, just attached to releases.
 
