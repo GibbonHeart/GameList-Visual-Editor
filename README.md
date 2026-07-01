@@ -30,6 +30,8 @@ There are two ways to do this - pick whichever you're comfortable with.
 
 ### Option A: Just use the .exe (Windows, no Python needed)
 
+Download: Latest release (.exe)
+
 Grab it from the **Releases** page on the right side of this repo, not from the source files themselves - it's not committed into the repo directly, just attached to releases.
 
 One thing worth knowing: PyInstaller-built `.exe` files (which is how this one's made) quite often get **falsely flagged by Windows Defender or other antivirus** as suspicious. This is a known, common false positive with that build tool specifically, not a sign anything's actually wrong. If you'd rather not take that on faith, see Option B below - running from source means nothing's hidden from you.
