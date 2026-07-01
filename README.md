@@ -40,12 +40,10 @@ One thing worth knowing: PyInstaller-built `.exe` files (which is how this one's
 
 This works on Windows, Mac, or Linux, and means you're running the exact code in this repo, nothing compiled or hidden.
 
-1. Install Python if you don't have it already (python.org — on Windows, tick "Add Python to PATH" during install)
-2. Open a terminal (Command Prompt/PowerShell on Windows, Terminal on Mac) — **don't just double-click the `.py` file**, that only opens it in an editor, it won't run
+1. Install Python if you don't have it already (python.org - on Windows, tick "Add Python to PATH" during install)
+2. Open a terminal (Command Prompt/PowerShell on Windows, Terminal on Mac) - **don't just double-click the `.py` file**, that only opens it in an editor, it won't run
 3. Install one extra package:
-pip install pillow
-
-Tkinter (the GUI part) comes bundled with Python already — nothing else to install.
+Tkinter (the GUI part) comes bundled with Python already - nothing else to install.
 4. Download `gamelist_visual_editor.py` from this repo, and `cd` into the folder you saved it in
 5. Run it:
 - Windows: `python gamelist_visual_editor.py`
@@ -79,11 +77,11 @@ Once you're confident in your settings, Roms-to-Roms is the quickest way to redo
 
 ## Building the .exe (for maintainers/contributors)
 
-The `.exe` in Releases isn't built automatically, and `build_exe.bat` is not the app itself — it's a script that *produces* it. To build a fresh `.exe`:
+The `.exe` in Releases isn't built automatically, and `build_exe.bat` is not the app itself - it's a script that *produces* it. To build a fresh `.exe`:
 
 1. On a Windows machine with Python installed, run `build_exe.bat`
 2. It calls PyInstaller under the hood, which bundles everything into `dist/GameList Visual Editor.exe`
-3. That resulting `.exe` is what gets uploaded as a Release asset — `build_exe.bat` itself is never distributed or run by end users
+3. That resulting `.exe` is what gets uploaded as a Release asset - `build_exe.bat` itself is never distributed or run by end users
 
 ## License
 
